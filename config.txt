@@ -1,9 +1,17 @@
 0. sudo apt-get update && sudo rpi-update
 1. sudo raspi-config
 2. enable VNC, enable CAMERA
-3. test camera using camera_test.py or raspistill  -o Destktop/image.jpg
-4. sudo apt-get install vim
-5. sudo vim /etc/dhcpcd.conf 
+3. pip3 install -r requirements.txt
+4. Install some linux packages I've written below (for opencv):
+sudo apt-get install libhdf5-dev
+sudo apt-get install libatlas-base-dev
+sudo apt-get install libjasper-dev 
+sudo apt-get install libqtgui4 
+sudo apt-get install libqt4-test
+
+5. test camera using camera_test.py or raspistill  -o Destktop/image.jpg
+6. sudo apt-get install vim
+7. sudo vim /etc/dhcpcd.conf 
 
 interface eth0
 
